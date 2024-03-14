@@ -1,0 +1,71 @@
+
+header{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 125px;
+    background-color: blue;
+}
+.logo{
+    width: 125px;
+    height: 125px;
+
+}
+header img {
+    width: 125px;
+    height: 125px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 0;
+    margin-left: 25px;
+
+}
+nav{
+    
+    display: flex;
+    justify-content: space-around;
+    font-size: 50px;
+    text-align: center;
+    align-self: center;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    margin-left: 200px;
+    margin-right: 100px;
+    
+}
+nav a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 1.3rem;
+
+}
+nav a:hover{
+    color: white;
+    background-color:  rgba(155, 155, 155, 0.7);
+    text-shadow: 4px 2px 1px rgba(0, 0, 0, 0.8);
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 125px;
+    background-color: blue;
+    text-align: center;
+    align-self: center;
+}
+
+footer h1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+footer img{
+    width: 115px;
+    height: 115px;
+}
+.insta{
+    width: 115px;
+    height: 115px;
+    text-align: center;
+    grid-column: 4/5;
+}
+
