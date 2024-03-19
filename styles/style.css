@@ -21,7 +21,7 @@ header{
     height: 125px;
 
 }
-header img {
+.logo_header {
     width: 125px;
     height: 125px;
     grid-column: 1/2;
