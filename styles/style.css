@@ -296,7 +296,7 @@ footer .logo {
 
 main p, .time p, .s_pg1, .s_pg2, .s_pg3, .s_pg4 {
     margin: 3rem 5%; /* Adjusted margins for mobile */
-    font-size: 1rem; /* Adjusted font size for readability */
+    font-size: .75rem; /* Adjusted font size for readability */
 }
 
 main img, .s_img, .smoothie_img, .zucchini_img, .greek_salad_img {
@@ -304,32 +304,38 @@ main img, .s_img, .smoothie_img, .zucchini_img, .greek_salad_img {
     height: auto; /* Maintains aspect ratio */
 }
 
-.stress, .cooking_page {
+.cooking_page {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto; /* Adjusted for a vertical layout on mobile */
 }
-
-/* Additional styling for smaller screens */
-@media only screen and (max-width: 768px) {
-    header, nav {
-        grid-template-columns: 1fr; /* Stacks elements vertically */
-    }
-
-    nav {
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 18px; /* Slightly larger font for readability */
-    }
-
-    .logo_header, .logo, .insta {
-        width: 100px;
-        height: 100px;
-    }
-
-    footer {
-        grid-template-columns: 1fr; /* Adjusts footer layout for mobile */
-    }
+.stress {
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr .125fr 1fr;
+    align-items: center;
 }
-
+.s_img {
+    grid-row: 2/4;
+    grid-column: 3/4;
+    justify-content: center;
+}
+.s_h {
+    grid-row: 1/2;
+    grid-column: 1/4;
+}
+.s_pg1 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.s_pg2 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+.s_pg3 {
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+.s_pg4 {
+    grid-row: 4/5;
+    grid-column: 3/4;
 }
