@@ -184,3 +184,147 @@ main img{
     width: 100%;
     height: max-content;
 }
+
+
+.workout{
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+    padding: 3rem 15%;
+}
+.vid_1{
+    grid-column: 1;
+    grid-row: 1/3;
+}
+.vid_2{
+    grid-column: 2;
+    grid-row: 3/5;
+}
+.vid_h1{
+    grid-column: 2;
+    grid-row: 1;
+}
+.vid_p1{
+    grid-column: 2;
+    grid-row: 2;
+    margin: 1rem 0%;
+}
+.vid_h2{
+    grid-column: 1;
+    grid-row: 3;
+}
+.vid_p2{
+    margin: 1rem 0%;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+
+@media screen and (max-width: 900px) {
+    @import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Arial', Helvetica, sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 125px;
+    background-color: #4A707A;
+}
+
+.logo_header, .logo {
+    width: 125px;
+    height: 125px;
+    margin-left: 25px;
+}
+
+nav {
+    display: flex;
+    font-size: 20px; /* Adjusted for better mobile readability */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem; /* Adjusted padding for smaller screens */
+}
+
+nav a:hover {
+    color: white;
+    background-color: rgba(155, 155, 155, 0.7);
+    text-shadow: 4px 2px 1px rgba(0, 0, 0, 0.8);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    background-color: #4A707A;
+    padding: 20px; /* Added padding for aesthetics */
+}
+
+footer h1 {
+    font-size: 1rem; /* Adjusted for smaller screens */
+}
+
+footer .logo {
+    width: 115px;
+    height: 115px;
+    margin: auto;
+}
+
+.insta {
+    padding-top: 10px;
+    width: 50px; /* Adjusted for smaller screens */
+    height: 50px; /* Adjusted for smaller screens */
+}
+
+main p, .time p, .s_pg1, .s_pg2, .s_pg3, .s_pg4 {
+    margin: 3rem 5%; /* Adjusted margins for mobile */
+    font-size: 1rem; /* Adjusted font size for readability */
+}
+
+main img, .s_img, .smoothie_img, .zucchini_img, .greek_salad_img {
+    width: 100%; /* Ensures images are responsive */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.stress, .cooking_page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; /* Adjusted for a vertical layout on mobile */
+}
+
+/* Additional styling for smaller screens */
+@media only screen and (max-width: 768px) {
+    header, nav {
+        grid-template-columns: 1fr; /* Stacks elements vertically */
+    }
+
+    nav {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 18px; /* Slightly larger font for readability */
+    }
+
+    .logo_header, .logo, .insta {
+        width: 100px;
+        height: 100px;
+    }
+
+    footer {
+        grid-template-columns: 1fr; /* Adjusts footer layout for mobile */
+    }
+}
+
+}
