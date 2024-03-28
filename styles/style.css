@@ -156,28 +156,31 @@ main img{
     display: grid;
     grid-template-columns: 2fr 2fr .5fr 2fr .5fr 2fr 2fr;
     grid-template-rows: .25fr 4fr;
-    padding: 
+}
+.cooking_page p {
+    margin: 0%;
 }
 .breakfast_smoothie {
     grid-column: 2/3;
     grid-row: 2/3;
 }
 .smoothie_img {
-    width: 250px;
+    width: 100%;
+    height: max-content;
 }
-
 .zucchini_pizza {
     grid-column: 4/5;
     grid-row: 2/3;
 }
 .zucchini_img {
-    width: 250px;
+    width: 100%;
+    height: max-content;
 }
-
 .greek_salad_wrap {
     grid-column: 6/7;
     grid-row: 2/3;
 }
 .greek_salad_img {
-    height: 325px;
+    width: 100%;
+    height: max-content;
 }
